@@ -20,6 +20,9 @@ namespace controller_for_landesk
         public AddressEntryWindow()
         {
             InitializeComponent();
+
+            comboProtocol.SelectedIndex = 0;
+            this.ActiveControl = txtHost;
         }
 
         private void btnGo_Click(object sender, EventArgs e)
