@@ -24,8 +24,8 @@ namespace controller_for_landesk
             //Initialize CEF
             var settings = new CefSettings();
             CefSharp.Cef.Initialize(settings);
-            
-            this.Browser = new ChromiumWebBrowser("google.com") { Dock = DockStyle.Fill};
+
+            this.Browser = new ChromiumWebBrowser("google.com") { Dock = DockStyle.Fill };
             this.Controls.Add(this.Browser);
 
             openToolStripMenuItem_Click(this, new EventArgs());
@@ -43,7 +43,7 @@ namespace controller_for_landesk
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            using (var form = new AddressEntryWindow())
+            using (var form = new AddressEntryWindow() { Icon = this.Icon })
             {
                 var result = form.ShowDialog();
                 if (result == DialogResult.OK)
