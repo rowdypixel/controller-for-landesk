@@ -53,5 +53,10 @@ namespace controller_for_landesk
                 }
             }
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
