@@ -37,7 +37,7 @@ namespace controller_for_landesk
         /// <param name="url"></param>
         private void ShowUrl(string url)
         {
-            this.Browser = new ChromiumWebBrowser(url);
+            this.Browser.Load(url);
             this.Text = string.Format("LanDesk - {0}", url);
         }
 
